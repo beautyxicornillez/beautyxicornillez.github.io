@@ -1,0 +1,86 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styling */
+header {
+  background-color: #d50000;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section Headings */
+h2 {
+  color: #c62828;
+  border-bottom: 2px solid #c62828;
+  padding-bottom: 5px;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+/* Background and Text Styling */
+section {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #999;
+}
+
+th {
+  background-color: #e53935;
+  color: white;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
