@@ -1,4 +1,6 @@
-/* General Body Styles */
+/* ===========================
+   General Body Styles
+=========================== */
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -7,7 +9,9 @@ body {
   padding: 0;
 }
 
-/* Header Styling */
+/* ===========================
+   Header Styling
+=========================== */
 header {
   background-color: #d50000;
   color: white;
@@ -15,10 +19,13 @@ header {
   text-align: center;
 }
 
-/* Navigation Styling */
+/* ===========================
+   Navigation Styling
+=========================== */
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -36,34 +43,47 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* Section Headings */
+/* ===========================
+   Section Headings
+=========================== */
 h2 {
   color: #c62828;
   border-bottom: 2px solid #c62828;
   padding-bottom: 5px;
+  margin-top: 0;
 }
 
-/* Paragraphs */
+/* ===========================
+   Paragraphs
+=========================== */
 p {
   line-height: 1.6;
   margin: 10px 0;
 }
 
-/* Background and Text Styling */
+/* ===========================
+   Section Container
+=========================== */
 section {
   background-color: white;
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Table Styling */
+/* ===========================
+   Table Styling
+=========================== */
 table {
   width: 100%;
   border-collapse: collapse;
+  margin-top: 10px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #999;
 }
 
@@ -75,12 +95,17 @@ th {
 
 td {
   padding: 10px;
+  text-align: center;
 }
 
-/* Footer */
+/* ===========================
+   Footer Styling
+=========================== */
 footer {
   background-color: #222;
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 30px;
+  font-size: 14px;
 }
