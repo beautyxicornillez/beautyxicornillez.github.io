@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Formula 1 Fan Page</title>
-   <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1 Fan Page</title>
+
+  <!-- Link main style and grid style -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="grid.css">
 </head>
 <body>
+  <!-- Grid Container -->
+  <div class="grid-container">
+
     <!-- Header Section -->
     <header>
       <h1>Formula 1 Fan Page</h1>
@@ -18,91 +24,100 @@
           <li><a href="#schedule">Race Schedule</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<!-- Main Content -->
-<main>
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Formula 1</h2>
-    <p>
-        Formula 1 is the highest class of international motorsport, featuring the fastest cars,
-        world-famous drivers, and races hosted around the globe. It is governed by the Fédération Internationale de l'Automobile (FIA) and consists of a series of races known as Grands Prix, held on both purpose-built circuits and public roads. 
-        The sport is not only a test of speed, but also of strategy, engineering innovation, and driver skill.
-        Teams invest millions to gain even the smallest competitive edge.
-        Learn more about the sport at
-        <a href="https://www.formula1.com" target="_blank">Formula1.com</a>.
-    </p>
-</section>
+    <!-- Main Content -->
+    <main>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Formula 1</h2>
+        <p>
+          Formula 1 is the highest class of international motorsport, featuring the fastest cars,
+          world-famous drivers, and races hosted around the globe. It is governed by the Fédération Internationale de l'Automobile (FIA) and consists of a series of races known as Grands Prix, held on both purpose-built circuits and public roads.
+          The sport is not only a test of speed, but also of strategy, engineering innovation, and driver skill.
+          Teams invest millions to gain even the smallest competitive edge.
+          Learn more about the sport at
+          <a href="https://www.formula1.com" target="_blank">Formula1.com</a>.
+        </p>
+        <img src="f1.jpg" alt="Formula 1" width="300" class="center-img">
 
-<!-- Media Section -->
-<section>
-  <h2>Formula 1</h2>
-  <img src="f1.jpg" alt="Formula 1 car" width="300">
-</section>
+      </section>
 
-<!-- Teams Section -->
-<section id="teams">
-  <h2>Popular Teams</h2>
-  <ul>
-    <li>Mercedes-AMG Petronas</li>
-    <li>Scuderia Ferrari</li>
-    <li>Red Bull Racing</li>
-    <li>McLaren F1 Team</li>
-    <li>Aston Martin Aramco</li>
-  </ul>
-</section>
+      <!-- Teams Section -->
+      <section id="teams">
+        <h2>Popular Teams</h2>
+        <ul>
+          <li>Mercedes-AMG Petronas</li>
+          <li>Scuderia Ferrari</li>
+          <li>Red Bull Racing</li>
+          <li>McLaren F1 Team</li>
+          <li>Aston Martin Aramco</li>
+        </ul>
+      </section>
 
-<!-- Drivers Section -->
-<section id="drivers">
-  <h2>Top Drivers</h2>
-  <article>
-    <h3>Lewis Hamilton</h3>
-    <p>7-time World Champion known for his consistency and dominance with Mercedes. Hamilton holds records for most pole positions and is tied for the most championship titles with Michael Schumacher. Off the track, he is an advocate for diversity in motorsport and environmental issues.</p>
-  </article>
-  <article>
-   <h3>Max Verstappen</h3>
-   <p>Young and fearless, Verstappen has dominated recent seasons with Red Bull Racing. Known for his aggressive yet calculated driving style, he won his first World Championship in 2021 and followed it up with multiple consecutive titles, establishing himself as one of the sport’s modern greats.</p>
-  </article>
-  <article>
-   <h3>Charles Leclerc</h3>
-   <p>Ferrari’s star driver, admired for his speed and determination on the track. Leclerc joined Ferrari in 2019 and quickly became a fan favorite due to his raw talent and strong qualifying performances. Despite struggles with team strategy, he continues to shine with remarkable racecraft.</p>
-  </article>
-</section>
+      <!-- Drivers Section -->
+      <section id="drivers">
+        <h2>Top Drivers</h2>
+        <article>
+          <h3>Lewis Hamilton</h3>
+          <p>7-time World Champion known for his consistency and dominance with Mercedes. Hamilton holds records for most pole positions and is tied for the most championship titles with Michael Schumacher. Off the track, he is an advocate for diversity in motorsport and environmental issues.</p>
+        </article>
+        <article>
+          <h3>Max Verstappen</h3>
+          <p>Young and fearless, Verstappen has dominated recent seasons with Red Bull Racing. Known for his aggressive yet calculated driving style, he won his first World Championship in 2021 and followed it up with multiple consecutive titles, establishing himself as one of the sport’s modern greats.</p>
+        </article>
+        <article>
+          <h3>Charles Leclerc</h3>
+          <p>Ferrari’s star driver, admired for his speed and determination on the track. Leclerc joined Ferrari in 2019 and quickly became a fan favorite due to his raw talent and strong qualifying performances. Despite struggles with team strategy, he continues to shine with remarkable racecraft.</p>
+        </article>
+      </section>
 
-<!-- Schedule Section -->
-<section id="schedule">
-  <h2>Upcoming Race Schedule</h2>
-  <table border="1">
-    <tr>
-      <th>Grand Prix</th>
-      <th>Location</th>
-      <th>Date</th>
-    </tr>
-    <tr>
-      <td>Monaco GP</td>
-      <td>Monte Carlo, Monaco</td>
-      <td>May 25, 2025</td>
-    </tr>
-    <tr>
-      <td>British GP</td>
-      <td>Silverstone, UK</td>
-      <td>July 13, 2025</td>
-    </tr>
-    <tr>
-      <td>Singapore GP</td>
-      <td>Marina Bay, Singapore</td>
-      <td>September 21, 2025</td>
-    </tr>
-  </table>
-</section>
-</main>
+      <!-- Schedule Section -->
+      <section id="schedule">
+        <h2>Upcoming Race Schedule</h2>
+        <table>
+          <tr>
+            <th>Grand Prix</th>
+            <th>Location</th>
+            <th>Date</th>
+          </tr>
+          <tr>
+            <td>Monaco GP</td>
+            <td>Monte Carlo, Monaco</td>
+            <td>May 25, 2025</td>
+          </tr>
+          <tr>
+            <td>British GP</td>
+            <td>Silverstone, UK</td>
+            <td>July 13, 2025</td>
+          </tr>
+          <tr>
+            <td>Singapore GP</td>
+            <td>Marina Bay, Singapore</td>
+            <td>September 21, 2025</td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-<!-- Footer Section -->
-<footer id="contact">
-<p><strong>Contact:</strong> WebMaster@Formula1.com</p>
-<p>&copy; 2025 Formula 1 Fan Page. All rights reserved.</p>
-</footer>
+    <!-- Sidebar Section -->
+    <aside id="sidebar">
+      <h2>Quick Facts</h2>
+      <ul>
+        <li>First F1 season: 1950</li>
+        <li>Current Champion: Max Verstappen</li>
+        <li>Fastest lap ever: 1:13.078 (Lewis Hamilton, 2020)</li>
+        <li>Most wins: Lewis Hamilton (103)</li>
+      </ul>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+      <p><strong>Contact:</strong> WebMaster@Formula1.com</p>
+      <p>&copy; 2025 Formula 1 Fan Page. All rights reserved.</p>
+    </footer>
+
+  </div> <!-- End of grid-container -->
 </body>
 </html>
