@@ -1,0 +1,124 @@
+/* Atelier Archives Theme — Based on Uniform Details */
+
+:root {
+  --color-light: #e5e2da;
+  --color-medium: #b0a99f;
+  --color-bg: #f9f5f2;
+  --text-dark: #222;
+  --text-muted: #5c5c5c;
+
+  --max-width: 950px;
+  --pad: 20px;
+  --border-radius: 8px;
+  font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+}
+
+/* Global layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--pad);
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--text-dark);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+  color: var(--text-muted);
+}
+
+/* Header */
+header {
+  background-color: var(--color-light);
+  margin-bottom: 25px;
+  padding: 16px 0;
+  border-bottom: 3px solid var(--color-medium);
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+nav.site-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav.site-nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav.site-nav a:hover {
+  color: var(--color-medium);
+}
+
+/* General sections */
+section {
+  background-color: #fff;
+  border: 1px solid var(--color-light);
+  border-radius: var(--border-radius);
+  padding: 18px 20px;
+  margin-bottom: 25px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--color-light);
+  border-top: 3px solid var(--color-medium);
+  padding: 18px 20px;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: var(--text-dark);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.footer a:hover {
+  color: var(--color-medium);
+}
+
+/* Logo size */
+.footer img, header img {
+  height: 55px; /* adjust slightly as needed */
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .container {
+    padding: 14px;
+  }
+
+  nav.site-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
