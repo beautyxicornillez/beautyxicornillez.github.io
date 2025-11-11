@@ -1,129 +1,217 @@
-/* GLOBAL STYLES */
+/* =========================
+   ATELIER ARCHIVES — LUXE MINIMALIST THEME
+   ========================= */
+
 :root {
+  /* Fonts */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Lato', sans-serif;
-}
-  /* Atelier Archives Theme — Based on Uniform Details */
 
-:root {
-  --color-light: #e5e2da;
-  --color-medium: #b0a99f;
-  --color-bg: #f9f5f2;
-  --text-dark: #222;
-  --text-muted: #5c5c5c;
+  /* Colors */
+  --color-light: #f2f0ec;  /* lighter, airy background */
+  --color-medium: #b0a99f; /* warm accent */
+  --color-bg: #fffdfb;     /* soft off-white */
+  --text-dark: #1a1a1a;    /* deep charcoal for luxury feel */
+  --text-muted: #555;      /* subtle secondary text */
 
-  --max-width: 950px;
-  --pad: 20px;
-  --border-radius: 8px;
-  font-family: "Poppins", "Segoe UI", Roboto, sans-serif;
+  /* Layout */
+  --max-width: 1000px;
+  --pad: 24px;
+  --border-radius: 10px;
 }
 
-/* Global layout */
+/* =========================
+   GLOBAL LAYOUT
+   ========================= */
 html, body {
   margin: 0;
   padding: 0;
   background-color: var(--color-bg);
   color: var(--text-dark);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-family: var(--font-body), "Segoe UI", Roboto, sans-serif;
 }
 
-/* Container */
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
   padding: var(--pad);
 }
 
-/* Typography */
+/* =========================
+   TYPOGRAPHY — VOGUE STYLE
+   ========================= */
 h1, h2, h3 {
-  color: var(--text-dark);
-  font-weight: 600;
-  margin-bottom: 10px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  text-align: center; /* CENTER ALIGN HEADINGS */
+}
+
+h2 {
+  font-size: 2rem; /* main section headers */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.4rem; /* subheaders */
+  margin-bottom: 12px;
 }
 
 p {
-  text-align: justify;
-  margin-bottom: 15px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-align: justify; /* JUSTIFIED BODY TEXT */
   color: var(--text-muted);
+  margin-bottom: 20px;
 }
 
-/* Header */
-header {
-  background-color: var(--color-light);
-  margin-bottom: 25px;
-  padding: 16px 0;
-  border-bottom: 3px solid var(--color-medium);
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-}
-
-nav.site-nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-nav.site-nav a {
-  text-decoration: none;
-  color: var(--text-dark);
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav.site-nav a:hover {
-  color: var(--color-medium);
-}
-
-/* General sections */
+/* =========================
+   SECTIONS — ELEGANT CARDS
+   ========================= */
 section {
   background-color: #fff;
-  border: 1px solid var(--color-light);
   border-radius: var(--border-radius);
-  padding: 18px 20px;
-  margin-bottom: 25px;
+  padding: 24px 28px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05); /* airy shadow for depth */
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Footer */
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+ul {
+  padding-left: 24px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* =========================
+   ASIDE / CONTACT
+   ========================= */
+aside section {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  padding: 20px 24px;
+}
+
+/* =========================
+   FOOTER — CLEAN & CLASSY
+   ========================= */
 .footer {
   background-color: var(--color-light);
   border-top: 3px solid var(--color-medium);
-  padding: 18px 20px;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
+  padding: 24px 28px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
-.footer a {
+.footer-nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-nav a {
   color: var(--text-dark);
   text-decoration: none;
-  margin-left: 10px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.3s, letter-spacing 0.3s;
 }
 
-.footer a:hover {
+.footer-nav a:hover {
   color: var(--color-medium);
+  letter-spacing: 0.5px;
 }
 
-/* Logo size */
+.footer-left {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-left span {
+  font-weight: 500;
+}
+
+.footer-icons a {
+  margin-left: 12px;
+  transition: transform 0.3s;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1);
+}
+
 .footer img, header img {
-  height: 55px; /* adjust slightly as needed */
+  height: 55px;
 }
 
-/* Responsive tweaks */
-@media (max-width: 640px) {
-  .container {
-    padding: 14px;
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
   }
 
-  nav.site-nav {
-    flex-direction: column;
-    gap: 10px;
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 18px 20px;
   }
 
   .footer {
     flex-direction: column;
     align-items: flex-start;
   }
+
+  .footer-top, .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+}
+
+/* =========================
+   UX & INTERACTIONS
+   ========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  transition: color 0.3s, letter-spacing 0.3s;
 }
