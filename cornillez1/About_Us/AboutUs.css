@@ -1,4 +1,9 @@
-/* Atelier Archives Theme — Based on Uniform Details */
+/* GLOBAL STYLES */
+:root {
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Lato', sans-serif;
+}
+  /* Atelier Archives Theme — Based on Uniform Details */
 
 :root {
   --color-light: #e5e2da;
