@@ -47,7 +47,8 @@ h1, h2, h3 {
   line-height: 1.2;
   margin-bottom: 18px;
   letter-spacing: 0.5px;
-  text-align: center; /* CENTER ALIGN HEADINGS */
+  text-align: center;            /* Center all headings */
+  color: var(--color-medium);    /* Accent color for all headings */
 }
 
 h2 {
@@ -64,7 +65,7 @@ h3 {
 p {
   font-family: var(--font-body);
   font-size: 1rem;
-  text-align: justify; /* JUSTIFIED BODY TEXT */
+  text-align: justify; /* Body text justified */
   color: var(--text-muted);
   margin-bottom: 20px;
 }
