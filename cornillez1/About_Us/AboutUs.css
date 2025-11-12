@@ -117,6 +117,10 @@ aside section {
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
+
+  /* ✅ Make footer full-width */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
