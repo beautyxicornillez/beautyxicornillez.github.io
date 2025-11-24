@@ -41,20 +41,19 @@ html, body {
 /* =========================
    TYPOGRAPHY
    ========================= */
-h1, h2, h3 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 18px;
-  letter-spacing: 0.5px;
+
+/* Latest News title */
+h1 {
+  font-size: 3rem; /* slightly bigger */
   text-align: center;
-  color: var(--color-medium);
+  color: var(--text-dark);
+  margin-bottom: 40px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
+/* Article headings */
+section article h2 {
+  color: #333333; /* darker shade for headlines */
+  margin-bottom: 15px;
 }
 
 h3 {
@@ -104,6 +103,20 @@ section article a {
 }
 
 /* =========================
+   LINKS
+   ========================= */
+section article a {
+  color: var(--color-medium);
+  font-weight: 500;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+section article a:hover {
+  color: #9b9389;
+  text-decoration: underline; /* underline on hover */
+}
+
+/* =========================
    SECTION STYLING
    ========================= */
 section {
@@ -119,19 +132,6 @@ section {
 section:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-/* =========================
-   LINKS
-   ========================= */
-a {
-  text-decoration: none;
-  color: var(--color-medium);
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: #9b9389;
 }
 
 /* =========================
@@ -212,6 +212,10 @@ hr {
    RESPONSIVE
    ========================= */
 @media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
   h2 {
     font-size: 1.8rem;
   }
