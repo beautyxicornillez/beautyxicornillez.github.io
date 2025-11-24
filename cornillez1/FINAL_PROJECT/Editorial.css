@@ -71,7 +71,40 @@ p {
 }
 
 /* =========================
-   ARTICLE SECTIONS
+   ARTICLE / IMAGE STYLING
+   ========================= */
+section article {
+  display: flex;
+  flex-direction: column; /* stack image above text */
+  align-items: center;    /* center content */
+  text-align: center;     /* center headings and text */
+  margin-bottom: 50px;
+}
+
+section article img {
+  width: 100%;             /* full width of container */
+  max-width: 600px;        /* limit max size */
+  height: auto;            /* maintain aspect ratio */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  object-fit: cover;       /* ensure good cropping if needed */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section article img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+section article h2, 
+section article p, 
+section article a {
+  max-width: 700px;  /* optional, prevent text from being too wide */
+}
+
+/* =========================
+   SECTION STYLING
    ========================= */
 section {
   background-color: var(--color-light);
@@ -88,14 +121,9 @@ section:hover {
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 15px;
-}
-
-/* Links */
+/* =========================
+   LINKS
+   ========================= */
 a {
   text-decoration: none;
   color: var(--color-medium);
@@ -196,8 +224,20 @@ hr {
     padding: 18px 20px;
   }
 
+  section article h2,
+  section article p,
+  section article a {
+    max-width: 100%;
+  }
+
   .container {
     padding: 16px;
   }
 }
 
+/* =========================
+   UX & INTERACTIONS
+   ========================= */
+html {
+  scroll-behavior: smooth;
+}
