@@ -1,28 +1,16 @@
-/* =========================
-   ATELIER ARCHIVES — EDITORIAL THEME
-   ========================= */
-
 :root {
-  /* Fonts */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Lato', sans-serif;
-
-  /* Colors */
-  --color-light: #f2f0ec;  /* lighter, airy background */
-  --color-medium: #b0a99f; /* warm accent */
-  --color-bg: #fffdfb;     /* soft off-white */
-  --text-dark: #1a1a1a;    /* deep charcoal for luxury feel */
-  --text-muted: #555;      /* subtle secondary text */
-
-  /* Layout */
+  --color-light: #f2f0ec;
+  --color-medium: #b0a99f;
+  --color-bg: #fffdfb;
+  --text-dark: #1a1a1a;
+  --text-muted: #555;
   --max-width: 1000px;
   --pad: 24px;
   --border-radius: 10px;
 }
 
-/* =========================
-   GLOBAL LAYOUT
-   ========================= */
 html, body {
   margin: 0;
   padding: 0;
@@ -38,27 +26,22 @@ html, body {
   padding: var(--pad);
 }
 
-/* =========================
-   TYPOGRAPHY
-   ========================= */
-
-/* Latest News title */
 h1 {
-  font-size: 3rem; /* slightly bigger */
+  font-size: 3.2rem;
   text-align: center;
   color: var(--text-dark);
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* Article headings */
 section article h2 {
-  color: #333333; /* darker shade for headlines */
-  margin-bottom: 15px;
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 20px;
 }
 
 h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
 }
 
 p {
@@ -69,24 +52,21 @@ p {
   margin-bottom: 20px;
 }
 
-/* =========================
-   ARTICLE / IMAGE STYLING
-   ========================= */
 section article {
   display: flex;
-  flex-direction: column; /* stack image above text */
-  align-items: center;    /* center content */
-  text-align: center;     /* center headings and text */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   margin-bottom: 50px;
 }
 
 section article img {
-  width: 100%;             /* full width of container */
-  max-width: 600px;        /* limit max size */
-  height: auto;            /* maintain aspect ratio */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 20px;
-  object-fit: cover;       /* ensure good cropping if needed */
+  object-fit: cover;
   box-shadow: 0 6px 20px rgba(0,0,0,0.05);
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -99,12 +79,9 @@ section article img:hover {
 section article h2, 
 section article p, 
 section article a {
-  max-width: 700px;  /* optional, prevent text from being too wide */
+  max-width: 700px;
 }
 
-/* =========================
-   LINKS
-   ========================= */
 section article a {
   color: var(--color-medium);
   font-weight: 500;
@@ -113,12 +90,9 @@ section article a {
 
 section article a:hover {
   color: #9b9389;
-  text-decoration: underline; /* underline on hover */
+  text-decoration: underline;
 }
 
-/* =========================
-   SECTION STYLING
-   ========================= */
 section {
   background-color: var(--color-light);
   border-radius: var(--border-radius);
@@ -134,9 +108,6 @@ section:hover {
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   FOOTER — CLEAN & CLASSY
-   ========================= */
 .footer {
   background-color: var(--color-medium);
   color: #fff;
@@ -208,9 +179,6 @@ hr {
   align-items: center;
 }
 
-/* =========================
-   RESPONSIVE
-   ========================= */
 @media (max-width: 768px) {
   h1 {
     font-size: 2.5rem;
@@ -239,9 +207,6 @@ hr {
   }
 }
 
-/* =========================
-   UX & INTERACTIONS
-   ========================= */
 html {
   scroll-behavior: smooth;
 }
