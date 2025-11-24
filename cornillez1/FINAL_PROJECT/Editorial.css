@@ -1,86 +1,122 @@
 /* =========================
-   EDITORIAL — MAIN STYLES
+   ATELIER ARCHIVES — EDITORIAL THEME
    ========================= */
 
-/* Global Fonts */
-body {
-  font-family: 'Lato', sans-serif;
+:root {
+  /* Fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Lato', sans-serif;
+
+  /* Colors */
+  --color-light: #f2f0ec;  /* lighter, airy background */
+  --color-medium: #b0a99f; /* warm accent */
+  --color-bg: #fffdfb;     /* soft off-white */
+  --text-dark: #1a1a1a;    /* deep charcoal for luxury feel */
+  --text-muted: #555;      /* subtle secondary text */
+
+  /* Layout */
+  --max-width: 1000px;
+  --pad: 24px;
+  --border-radius: 10px;
+}
+
+/* =========================
+   GLOBAL LAYOUT
+   ========================= */
+html, body {
   margin: 0;
   padding: 0;
-  line-height: 1.6;
-  color: #333;
+  background-color: var(--color-bg);
+  color: var(--text-dark);
+  line-height: 1.8;
+  font-family: var(--font-body), "Segoe UI", Roboto, sans-serif;
 }
 
-/* Headings use Poppins */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  margin-bottom: 15px;
-}
-
-/* Main Container */
-.main-container {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 20px;
-  box-sizing: border-box;
-}
-
-/* Layout Section */
-.section {
-  max-width: 1200px;
+.container {
+  max-width: var(--max-width);
   margin: 0 auto;
-  padding: 30px 20px;
+  padding: var(--pad);
 }
 
-/* Paragraph */
-p {
+/* =========================
+   TYPOGRAPHY
+   ========================= */
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--color-medium);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 40px;
   margin-bottom: 20px;
-  font-size: 16px;
 }
 
-/* Images */
+h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  text-align: justify;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+/* =========================
+   ARTICLE SECTIONS
+   ========================= */
+section {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: 24px 28px;
+  margin-bottom: 35px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  border: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
 img {
   max-width: 100%;
   height: auto;
   display: block;
-}
-
-/* Buttons */
-button {
-  padding: 12px 25px;
-  border: none;
-  background-color: #b0a99f;
-  color: white;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #9b9389;
+  margin-bottom: 15px;
 }
 
 /* Links */
 a {
   text-decoration: none;
-  color: #333;
+  color: var(--color-medium);
+  transition: color 0.3s;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #9b9389;
 }
 
 /* =========================
-        FOOTER STYLES
+   FOOTER — CLEAN & CLASSY
    ========================= */
-
 .footer {
-  background-color: #b0a99f;
+  background-color: var(--color-medium);
   color: #fff;
   text-align: center;
   padding: 20px 0;
   font-size: 14px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 
 .footer a {
@@ -143,3 +179,25 @@ hr {
   display: flex;
   align-items: center;
 }
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  section {
+    padding: 18px 20px;
+  }
+
+  .container {
+    padding: 16px;
+  }
+}
+
