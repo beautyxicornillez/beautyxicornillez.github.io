@@ -1,171 +1,145 @@
-/* ============================
-   IMPORT GOOGLE FONT: LATO
-============================ */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+/* =========================
+   EDITORIAL — MAIN STYLES
+   ========================= */
 
-/* ============================
-   BASIC GLOBAL STYLES
-============================ */
+/* Global Fonts */
 body {
-    font-family: "Lato", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-    color: #222;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 2.5rem;
-    color: #111;
+/* Headings use Poppins */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
 }
 
-section {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Main Container */
+.main-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 20px;
+  box-sizing: border-box;
 }
 
-/* ============================
-   ARTICLE STYLING
-============================ */
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 30px;
+/* Layout Section */
+.section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
 }
 
-article img {
-    width: 100%;
-    max-width: 450px;
-    height: auto;
-    border-radius: 6px;
+/* Paragraph */
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
-article h2 {
-    margin: 15px 0 10px;
-    font-size: 1.6rem;
-    color: #111;
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-article p {
-    line-height: 1.6;
+/* Buttons */
+button {
+  padding: 12px 25px;
+  border: none;
+  background-color: #b0a99f;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
 }
 
-article a {
-    color: #333;
-    font-weight: 500;
-    text-decoration: underline;
-    margin-top: 5px;
+button:hover {
+  background-color: #9b9389;
 }
 
-article a:hover {
-    opacity: 0.7;
+/* Links */
+a {
+  text-decoration: none;
+  color: #333;
 }
 
-/* ============================
-          FOOTER
-============================ */
-footer {
-    background-color: #0f0f0f;
-    color: white;
-    margin-top: 60px;
-    padding: 40px 0;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Footer Navigation */
+/* =========================
+        FOOTER STYLES
+   ========================= */
+
+.footer {
+  background-color: #b0a99f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
 .footer-top {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-nav {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  font-size: 16px;
 }
 
-.footer-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 0.95rem;
+.footer-logo {
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
-.footer-nav a:hover {
-    opacity: 0.6;
+hr {
+  border: none;
+  border-top: 1px solid #dcd6cf;
+  margin: 20px 0;
 }
 
-.footer-logo img {
-    height: 55px;
-    margin-right: 20px;
-}
-
-/* Horizontal Line */
-footer hr {
-    width: 100%;
-    border: none;
-    border-top: 1px solid #333;
-    margin: 20px 0;
-}
-
-/* Bottom Section */
 .footer-bottom {
-    width: 85%;
-    max-width: 1200px;
-    margin: 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Left Text Links */
 .footer-left {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 
-.footer-left a {
-    color: #ffffff;
-    text-decoration: none;
+.footer-icons a {
+  margin: 0 5px;
 }
 
-.footer-left a:hover {
-    opacity: 0.6;
-}
-
-/* Social Icons */
 .footer-icons {
-    display: flex;
-    gap: 18px;
-}
-
-.footer-icons img {
-    height: 28px;
-    width: auto;
-    filter: invert(1);
-    transition: 0.2s;
-}
-
-.footer-icons img:hover {
-    opacity: 0.6;
-}
-
-/* ============================
-      RESPONSIVE DESIGN
-============================ */
-@media (min-width: 700px) {
-    article {
-        flex-direction: row;
-        gap: 25px;
-    }
+  display: flex;
+  align-items: center;
 }
