@@ -14,6 +14,36 @@
 
  <!-- Editorial -->
 <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Products&Services.html">Products & Services</a></li>
+                <li><a href="Editorial.html">Editorial</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+
+
+               
+
+
+            <!-- Search Bar -->
+                <li class="nav-search">
+                    <input type="text" placeholder="Search..." class="search-input" onkeydown="if(event.key === 'Enter') searchPage()">
+                </li>
+
+
+                <li><a href="Signup.html">Sign Up/Log In</a></li>
+            </ul>
+
+
+            <div class="logo-container" id="logo">
+                <img src="[0] WEB DESIGN LOGO [cropped].png" alt="Atelier Archives Logo" class="logo-img">
+            </div>
+        </nav>
+    </header>
+
+
     <h1>Latest News</h1>
     <section>
         <article>
@@ -109,8 +139,50 @@
 
 
   </footer>
+<script>
+        function searchPage() {
+            const query = document.getElementById("searchBox").value.trim().toLowerCase();
 
 
+    // Remove old highlights
+    document.querySelectorAll(".highlight").forEach(el => {
+        el.classList.remove("highlight");
+    });
+
+
+        if (!query) return;
+
+
+    // Search all text nodes in the body
+        const elements = document.querySelectorAll("body *:not(script):not(style)");
+
+
+        let foundElement = null;
+
+
+        elements.forEach(el => {
+            if (foundElement) return; // stop after first match
+            if (el.children.length === 0 && el.innerText.toLowerCase().includes(query)) {
+           
+            // Highlight the text
+                const regex = new RegExp(query, "i");
+                el.innerHTML = el.innerHTML.replace(regex, match => `<span class="highlight">${match}</span>`);
+
+
+                foundElement = el;
+
+
+            // Scroll smoothly to match
+                el.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+    });
+
+
+        if (!foundElement) {
+            alert("No results found for: " + query);
+    }
+}
+</script>
 
 
 </body>
