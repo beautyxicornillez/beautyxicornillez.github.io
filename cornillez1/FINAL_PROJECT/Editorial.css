@@ -58,6 +58,12 @@ section article {
   align-items: center;
   text-align: center;
   margin-bottom: 50px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #dcd6cf;
+}
+
+section article:last-child {
+  border-bottom: none;
 }
 
 section article img {
