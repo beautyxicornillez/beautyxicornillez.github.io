@@ -1,0 +1,171 @@
+/* ============================
+   IMPORT GOOGLE FONT: LATO
+============================ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+/* ============================
+   BASIC GLOBAL STYLES
+============================ */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2.5rem;
+    color: #111;
+}
+
+section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ============================
+   ARTICLE STYLING
+============================ */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+article img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 6px;
+}
+
+article h2 {
+    margin: 15px 0 10px;
+    font-size: 1.6rem;
+    color: #111;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+article a {
+    color: #333;
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 5px;
+}
+
+article a:hover {
+    opacity: 0.7;
+}
+
+/* ============================
+          FOOTER
+============================ */
+footer {
+    background-color: #0f0f0f;
+    color: white;
+    margin-top: 60px;
+    padding: 40px 0;
+}
+
+/* Footer Navigation */
+.footer-top {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+    opacity: 0.6;
+}
+
+.footer-logo img {
+    height: 55px;
+    margin-right: 20px;
+}
+
+/* Horizontal Line */
+footer hr {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Bottom Section */
+.footer-bottom {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Left Text Links */
+.footer-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 0.85rem;
+}
+
+.footer-left a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    opacity: 0.6;
+}
+
+/* Social Icons */
+.footer-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-icons img {
+    height: 28px;
+    width: auto;
+    filter: invert(1);
+    transition: 0.2s;
+}
+
+.footer-icons img:hover {
+    opacity: 0.6;
+}
+
+/* ============================
+      RESPONSIVE DESIGN
+============================ */
+@media (min-width: 700px) {
+    article {
+        flex-direction: row;
+        gap: 25px;
+    }
+}
